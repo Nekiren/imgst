@@ -35,3 +35,48 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcus no X</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>⬇️⬇️⬇️</h1>
+    <p>⛓️‍💥⛓️‍💥⛓️‍💥.</p>
+    <a id="abrirGuias" href="#">Clique aqui para abrir guias</a>
+    <p class="warning">Aviso: marcus dando muito a bunda.</p>
+
+    <script>
+        const abrirGuiasLink = document.getElementById("abrirGuias");
+
+        abrirGuiasLink.addEventListener("click", (event) => {
+            event.preventDefault(); // Impede o comportamento padrão do link
+
+            const site = "https://www.youtube.com/watch?v=qEjgJqGDpTU"; // Site que será aberto
+            const numeroGuias = 1; // Número de guias a serem abertas
+
+            for (let i = 0; i < numeroGuias; i++) {
+                window.open(site, "_blank");
+            }
+        });
+    </script>
+</body>
+</html>
